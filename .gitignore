@@ -1,0 +1,35 @@
+# --- Competition data (raw zips, extracted CSVs, processed parquet) ---
+data/
+sample_submission.csv
+*.csv
+*.parquet
+*.pkl
+*.zip
+
+# --- Python environment ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Model artifacts & tuning ---
+catboost_info/
+*.joblib
+*.cbm
+*.lgb
+*.xgb
+*.db
+*.sqlite3
+mlruns/
+
+# --- Secrets / local config ---
+.env
+.env.*
+
+# --- OS / editors ---
+.DS_Store
+.vscode/
+.idea/
