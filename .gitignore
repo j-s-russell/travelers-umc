@@ -1,5 +1,6 @@
 # --- Competition data (raw zips, extracted CSVs, processed parquet) ---
 data/
+DATA/
 sample_submission.csv
 *.csv
 *.parquet
@@ -33,3 +34,6 @@ mlruns/
 .DS_Store
 .vscode/
 .idea/
+
+# --- Claude Code ---
+CLAUDE.md

@@ -1,0 +1,137 @@
+{
+ "spec": [
+  {
+   "col": "CREDIT_SCORE",
+   "form": "linear",
+   "scope": "all",
+   "na": true
+  },
+  {
+   "col": "CREDIT_SCORE",
+   "form": "step",
+   "scope": "2015",
+   "cuts": [
+    650
+   ]
+  },
+  {
+   "col": "QUOTED_AMT",
+   "form": "linear",
+   "scope": "per-era",
+   "na": true
+  },
+  {
+   "col": "ACS_POP_DENSITY",
+   "form": "linear",
+   "scope": "per-era",
+   "na": true
+  },
+  {
+   "col": "R_EDU_MAJ",
+   "form": "flag",
+   "scope": "late"
+  },
+  {
+   "col": "DISCOUNT_IND",
+   "form": "flag",
+   "scope": "2016"
+  },
+  {
+   "col": "NUM_DRIVERS",
+   "form": "linear",
+   "scope": "split"
+  },
+  {
+   "col": "DRV_AGE_35_50",
+   "form": "flag",
+   "scope": "all"
+  },
+  {
+   "col": "R_DPV_GT1",
+   "form": "flag",
+   "scope": "per-era"
+  },
+  {
+   "col": "R_DPV_HALF_TO_1",
+   "form": "flag",
+   "scope": "per-era"
+  },
+  {
+   "col": "PRIOR_CARRIER_GRP",
+   "form": "onehot",
+   "scope": "all"
+  },
+  {
+   "col": "COV_PKG_TYPE",
+   "form": "onehot",
+   "scope": "all"
+  },
+  {
+   "col": "CAT_ZONE",
+   "form": "linear",
+   "scope": "all",
+   "na": true
+  },
+  {
+   "col": "VEH_LUXURY_SHARE",
+   "form": "linear",
+   "scope": "split"
+  }
+ ],
+ "C": 0.1,
+ "n_params": 40,
+ "cv_auc_15": 0.7194706954110601,
+ "cv_top_decile": 0.31209039548022594,
+ "coefficients": {
+  "era=2016": -0.074942,
+  "era=2017-18": -1.646454,
+  "CREDIT_SCORE:linear": 0.000566,
+  "CREDIT_SCORE:missing": 0.162388,
+  "CREDIT_SCORE:step[650]>=650 @2015": 0.256522,
+  "QUOTED_AMT:linear @2015": -4.4e-05,
+  "QUOTED_AMT:linear @2016": -7e-05,
+  "QUOTED_AMT:linear @2017-18": -1.2e-05,
+  "QUOTED_AMT:missing": -1.01531,
+  "ACS_POP_DENSITY:linear @2015": 7e-06,
+  "ACS_POP_DENSITY:linear @2016": 1.1e-05,
+  "ACS_POP_DENSITY:linear @2017-18": 3.6e-05,
+  "ACS_POP_DENSITY:missing": 0.110409,
+  "R_EDU_MAJ:flag @2017-18": 1.18911,
+  "DISCOUNT_IND:flag @2016": 0.721039,
+  "NUM_DRIVERS:linear @early": -0.200285,
+  "NUM_DRIVERS:linear @2017-18": 0.081989,
+  "DRV_AGE_35_50:flag": 0.67223,
+  "R_DPV_GT1:flag @2015": -0.287179,
+  "R_DPV_GT1:flag @2016": -0.289613,
+  "R_DPV_GT1:flag @2017-18": -0.490413,
+  "R_DPV_HALF_TO_1:flag @2015": 0.363678,
+  "R_DPV_HALF_TO_1:flag @2016": 0.325039,
+  "R_DPV_HALF_TO_1:flag @2017-18": 0.735354,
+  "PRIOR_CARRIER_GRP:onehot=Carrier_1": 0.188624,
+  "PRIOR_CARRIER_GRP:onehot=Carrier_6": 0.297282,
+  "PRIOR_CARRIER_GRP:onehot=Carrier_3": 0.473642,
+  "PRIOR_CARRIER_GRP:onehot=Missing": 0.129203,
+  "PRIOR_CARRIER_GRP:onehot=Carrier_2": 0.05446,
+  "PRIOR_CARRIER_GRP:onehot=Carrier_8": 0.604909,
+  "PRIOR_CARRIER_GRP:onehot=Carrier_7": -0.26202,
+  "PRIOR_CARRIER_GRP:onehot=Carrier_4": 0.325874,
+  "PRIOR_CARRIER_GRP:onehot=Other": 0.34918,
+  "COV_PKG_TYPE:onehot=High": -0.13041,
+  "COV_PKG_TYPE:onehot=Low": 0.110187,
+  "COV_PKG_TYPE:onehot=Missing": -0.111239,
+  "CAT_ZONE:linear": -0.130966,
+  "CAT_ZONE:missing": -0.116195,
+  "VEH_LUXURY_SHARE:linear @early": 0.066022,
+  "VEH_LUXURY_SHARE:linear @2017-18": 0.33251
+ },
+ "blend_weights": {
+  "CatBoost": 0.3,
+  "EBM": 0.0,
+  "GLM166": 0.0,
+  "Formula": 0.7
+ },
+ "submissions": {
+  "formula_v1": "formula_v1_20261030.csv",
+  "blend_v3": "blend_v3_20261030.csv"
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "final": "CatBoost 5 seeds",
+ "how": null,
+ "weights": {
+  "CatBoost 5 seeds": 1.0
+ },
+ "cv_auc": 0.7116611515600818,
+ "cv_auc_se": 0.003581715559373815,
+ "cv_top_decile_prec": 0.29920903954802264,
+ "xgb_params": {
+  "objective": "binary:logistic",
+  "eval_metric": "auc",
+  "tree_method": "hist",
+  "learning_rate": 0.03,
+  "max_depth": 3,
+  "min_child_weight": 3.5328009183148366,
+  "subsample": 0.7907670906071135,
+  "colsample_bytree": 0.6717368840397692,
+  "reg_lambda": 0.04796930369468281,
+  "max_cat_to_onehot": 1,
+  "seed": 42,
+  "nthread": -1,
+  "reg_alpha": 3.977938472379704,
+  "gamma": 4.724300370878253
+ },
+ "xgb_rounds": 1003,
+ "lr_params": {
+  "C": 0.01,
+  "n_knots": 6
+ },
+ "model_seeds": [
+  42,
+  1,
+  2,
+  3,
+  4
+ ],
+ "round_scale": 1.2,
+ "submissions": {
+  "catboost_tuned5": "catboost_tuned5_20261030.csv"
+ }
+}

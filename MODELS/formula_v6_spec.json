@@ -1,0 +1,102 @@
+{
+ "spec": [
+  {
+   "col": "CREDIT_SCORE",
+   "form": "step",
+   "scope": "2015",
+   "cuts": [
+    650
+   ]
+  },
+  {
+   "col": "QUOTED_AMT",
+   "form": "linear",
+   "scope": "per-era",
+   "na": false
+  },
+  {
+   "col": "DEN_KM2",
+   "form": "linear",
+   "scope": "per-era",
+   "na": false
+  },
+  {
+   "col": "R_EDU_MAJ_P",
+   "form": "flag",
+   "scope": "late"
+  },
+  {
+   "col": "DISCOUNT_IND",
+   "form": "flag",
+   "scope": "2016"
+  },
+  {
+   "col": "NUM_DRIVERS",
+   "form": "linear",
+   "scope": "split"
+  },
+  {
+   "col": "DRV_AGE_35_50",
+   "form": "flag",
+   "scope": "all"
+  },
+  {
+   "col": "R_DPV_GT1",
+   "form": "flag",
+   "scope": "split"
+  },
+  {
+   "col": "R_DPV_HALF_TO_1",
+   "form": "flag",
+   "scope": "split"
+  },
+  {
+   "col": "PRIOR_CARRIER_GRP",
+   "form": "onehot",
+   "scope": "all"
+  },
+  {
+   "col": "CAT_ZONE",
+   "form": "linear",
+   "scope": "all",
+   "na": false
+  },
+  {
+   "col": "VEH_LUXURY_SHARE",
+   "form": "linear",
+   "scope": "late"
+  },
+  {
+   "col": "PKG_ORDINAL_IMP",
+   "form": "linear",
+   "scope": "per-era"
+  },
+  {
+   "col": "R_CARRIER_3_8_MISS_2016",
+   "form": "flag",
+   "scope": "all"
+  },
+  {
+   "col": "DRV_ACC_FREE_MIN",
+   "form": "step",
+   "scope": "all",
+   "cuts": [
+    3
+   ]
+  },
+  {
+   "col": "VEH_MIN_GE5_P",
+   "form": "flag",
+   "scope": "all"
+  },
+  {
+   "col": "DEN_KM2_SQ",
+   "form": "linear",
+   "scope": "per-era"
+  }
+ ],
+ "C": 0.1,
+ "intercepts": "2era",
+ "zip3_late_offset_tau2": 0.03,
+ "blend_weight_formula": 0.9
+}
