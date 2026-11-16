@@ -35,5 +35,5 @@ mlruns/
 .vscode/
 .idea/
 
-# --- Claude Code ---
-CLAUDE.md
+# --- Competition descriptions ---
+DESCRIPTIONS/
